@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div(ui-view='controlPanel')
+  div(ui-view='scanPanel')
+  div(ui-view='imagePanel')
+  script(src='javascripts/client.js')
