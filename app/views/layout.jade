@@ -1,9 +1,13 @@
 doctype html
-html
+html(ng-app='main' ng-controller='mainCtrl')
   head
-    title= title
+    title(ng-bind='title|date:"MM/dd/yyyy \'-\' h:mma"')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='libs/lodash/lodash.js')
     script(src='libs/jquery/dist/jquery.js')
     script(src='libs/angular/angular.js')
-  body(ng-app='main' ng-controller='mainCtrl')
+    script(src='libs/angular-route/angular-route.js')
+    script(src='libs/angular-ui-router/release/angular-ui-router.js')
+  body
     block content

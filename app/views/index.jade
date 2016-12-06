@@ -1,7 +1,9 @@
 extends layout
 
 block content
-  div(ui-view='controlPanel')
-  div(ui-view='scanPanel')
-  div(ui-view='imagePanel')
+  div(ui-view='control')
+  div(ui-view='scan')
+  div(ui-view='screen')
   script(src='javascripts/client.js')
+  script(src='modules/config.js')
+  script(src='modules/control/controller.js')

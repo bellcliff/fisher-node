@@ -1,0 +1,21 @@
+body {
+    padding: 10px;
+}
+
+section {
+    border: 1px solid gray;
+    margin: 13px 0 26px 0;
+    padding: 0 0 13px 13px;
+}
+
+section h2{
+    margin: 0px 10px;
+    padding: 0;
+    font-size: 26px;
+    position: relative;
+    top: -13px;
+    z-index: 1;
+    background-color: white;
+    display: inline-block;
+}
+
